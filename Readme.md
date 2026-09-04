@@ -230,31 +230,6 @@ por ejemplo:
 
 el backend valida el codigo, busca el usuario por email y genera el jwt de la aplicacion.
 
-## flujo del login
-
-el login normal funciona de esta forma:
-
-```text
-usuario introduce email y contraseña
-        |
-        v
-angular llama a POST /api/auth/login
-        |
-        v
-spring busca el usuario por email
-        |
-        v
-se compara la contraseña con bcrypt
-        |
-        v
-se genera el jwt
-        |
-        v
-angular guarda el token
-        |
-        v
-/inicio
-```
 
 las contraseñas almacenadas en base de datos estan cifradas utilizando bcrypt.
 
