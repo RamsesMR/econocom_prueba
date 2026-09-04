@@ -1,0 +1,193 @@
+<div class="login">
+
+  <section class="login__visual">
+
+    <img
+      class="login__ilustracion"
+      src="assets/images/login.svg"
+      alt="Login"
+    >
+
+  </section>
+
+
+  <section class="login__panel">
+
+    <div class="login__contenido">
+
+      <img
+        class="login__logo-principal"
+        src="assets/images/logos/Logo-RD.svg"
+        alt="Realdooh"
+      >
+
+
+      <div class="login__formulario-contenedor">
+
+        <p class="login__subtitulo">
+          {{ textos.login?.titulo }}
+        </p>
+
+
+        <form
+          class="login__formulario"
+          [formGroup]="formulario"
+          (ngSubmit)="login()"
+        >
+
+
+          <mat-form-field
+            appearance="outline"
+            class="login__campo"
+          >
+
+            <mat-label>
+              {{ textos.login?.email }}
+            </mat-label>
+
+            <input
+              matInput
+              type="email"
+              formControlName="email"
+            >
+
+            <mat-error
+              *ngIf="formulario.get('email')?.hasError('required')"
+            >
+              {{ textos.login?.emailObligatorio }}
+            </mat-error>
+
+            <mat-error
+              *ngIf="formulario.get('email')?.hasError('email')"
+            >
+              {{ textos.login?.emailInvalido }}
+            </mat-error>
+
+          </mat-form-field>
+
+
+          <mat-form-field
+            appearance="outline"
+            class="login__campo"
+          >
+
+            <mat-label>
+              {{ textos.login?.password }}
+            </mat-label>
+
+            <input
+              matInput
+              [type]="verPassword ? 'text' : 'password'"
+              formControlName="password"
+            >
+
+            <button
+              mat-icon-button
+              matSuffix
+              type="button"
+              (click)="togglePassword()"
+            >
+
+              <mat-icon>
+                {{ verPassword ? 'visibility_off' : 'visibility' }}
+              </mat-icon>
+
+            </button>
+
+            <mat-error
+              *ngIf="formulario.get('password')?.hasError('required')"
+            >
+              {{ textos.login?.passwordObligatorio }}
+            </mat-error>
+
+          </mat-form-field>
+
+
+          <p
+            *ngIf="mensajeError"
+            class="login__error"
+          >
+            {{ mensajeError }}
+          </p>
+
+
+          <button
+            mat-flat-button
+            color="primary"
+            type="submit"
+            class="login__boton login__boton--principal"
+          >
+            {{ textos.login?.entrar }}
+          </button>
+
+
+          <p class="login__texto-acceso">
+            {{ textos.login?.otrasFormas }}
+          </p>
+
+
+          <button
+            mat-flat-button
+            type="button"
+            class="login__boton login__boton--sso"
+            (click)="iniciarSso()"
+          >
+            {{ textos.login?.entrarSso }}
+          </button>
+
+
+          <p class="login__registro">
+
+            {{ textos.login?.noCuenta }}
+
+            <a href="#">
+              <u>{{ textos.login?.registrate }}</u>
+            </a>
+
+          </p>
+
+        </form>
+
+      </div>
+
+    </div>
+
+
+    <div class="login__footer">
+
+      <div class="login__idioma">
+
+        <mat-icon class="login__idioma-icono">
+          language
+        </mat-icon>
+
+        <span>
+          {{ textos.login?.idioma }}
+        </span>
+
+        <select
+          class="login__idioma-select"
+          [value]="idiomaActual"
+          (change)="cambiarIdioma($event)"
+          aria-label="Idioma"
+        >
+          <option value="es">ES</option>
+          <option value="en">EN</option>
+          <option value="fr">FR</option>
+          <option value="pt">PT</option>
+        </select>
+
+      </div>
+
+
+      <img
+        class="login__logo-secundario"
+        src="assets/images/logos/Econocom.svg"
+        alt="Econocom"
+      >
+
+    </div>
+
+  </section>
+
+</div>

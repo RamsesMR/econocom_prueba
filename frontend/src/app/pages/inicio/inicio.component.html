@@ -1,0 +1,24 @@
+<div class="inicio">
+
+  <h1>
+    {{ textos.inicio?.titulo }}
+  </h1>
+
+  <p>
+    {{ textos.inicio?.mensaje }}
+  </p>
+
+  <button
+    mat-flat-button
+    color="primary"
+    type="button"
+    (click)="cerrarSesion()"
+  >
+    <mat-icon>
+      logout
+    </mat-icon>
+
+    {{ textos.inicio?.cerrarSesion }}
+  </button>
+
+</div>

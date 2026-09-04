@@ -1,0 +1,30 @@
+{
+  "login": {
+    "titulo": "Inicie sessão na sua conta",
+    "email": "Correio eletrónico",
+    "password": "Palavra-passe",
+    "entrar": "ENTRAR",
+    "otrasFormas": "Outras formas de acesso:",
+    "entrarSso": "ENTRAR COM DECATHLON",
+    "noCuenta": "Não tem uma conta?",
+    "registrate": "Registe-se",
+    "idioma": "IDIOMA:",
+    "emailObligatorio": "O correio eletrónico é obrigatório",
+    "emailInvalido": "Introduza um correio eletrónico válido",
+    "passwordObligatorio": "A palavra-passe é obrigatória",
+    "credencialesInvalidas": "Correio eletrónico ou palavra-passe incorretos"
+  },
+  "sso": {
+    "procesando": "A processar autenticação SSO...",
+    "correcto": "Autenticação SSO efetuada com sucesso",
+    "sinCodigo": "Código SSO não recebido",
+    "error": "Erro na autenticação SSO",
+    "titulo": "Autenticação SSO",
+    "volver": "Voltar ao início de sessão"
+  },
+  "inicio": {
+  "titulo": "Login efetuado com sucesso",
+  "mensaje": "Utilizador autenticado com sucesso.",
+  "cerrarSesion": "TERMINAR SESSÃO"
+}
+}

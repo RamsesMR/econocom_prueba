@@ -1,0 +1,30 @@
+{
+  "login": {
+    "titulo": "Sign in to your account",
+    "email": "Email",
+    "password": "Password",
+    "entrar": "SIGN IN",
+    "otrasFormas": "Other ways to sign in:",
+    "entrarSso": "SIGN IN WITH DECATHLON",
+    "noCuenta": "Don't have an account?",
+    "registrate": "Register",
+    "idioma": "LANGUAGE:",
+    "emailObligatorio": "Email is required",
+    "emailInvalido": "Enter a valid email address",
+    "passwordObligatorio": "Password is required",
+    "credencialesInvalidas": "Incorrect email or password"
+  },
+  "sso": {
+    "procesando": "Processing SSO authentication...",
+    "correcto": "SSO authentication successful",
+    "sinCodigo": "SSO code not received",
+    "error": "SSO authentication error",
+    "titulo": "SSO Authentication",
+    "volver": "Back to sign in"
+  },
+  "inicio": {
+  "titulo": "Login successful",
+  "mensaje": "User authenticated successfully.",
+  "cerrarSesion": "LOG OUT"
+}
+}

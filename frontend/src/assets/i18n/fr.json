@@ -1,0 +1,30 @@
+{
+  "login": {
+    "titulo": "Connectez-vous à votre compte",
+    "email": "Adresse e-mail",
+    "password": "Mot de passe",
+    "entrar": "SE CONNECTER",
+    "otrasFormas": "Autres méthodes de connexion :",
+    "entrarSso": "SE CONNECTER AVEC DECATHLON",
+    "noCuenta": "Vous n'avez pas de compte ?",
+    "registrate": "Inscrivez-vous",
+    "idioma": "LANGUE :",
+    "emailObligatorio": "L'adresse e-mail est obligatoire",
+    "emailInvalido": "Saisissez une adresse e-mail valide",
+    "passwordObligatorio": "Le mot de passe est obligatoire",
+    "credencialesInvalidas": "Adresse e-mail ou mot de passe incorrect"
+  },
+  "sso": {
+    "procesando": "Traitement de l'authentification SSO...",
+    "correcto": "Authentification SSO réussie",
+    "sinCodigo": "Code SSO non reçu",
+    "error": "Erreur d'authentification SSO",
+    "titulo": "Authentification SSO",
+    "volver": "Retour à la connexion"
+  },
+  "inicio": {
+  "titulo": "Connexion réussie",
+  "mensaje": "Utilisateur authentifié correctement.",
+  "cerrarSesion": "SE DÉCONNECTER"
+}
+}
